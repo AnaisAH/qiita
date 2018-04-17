@@ -47,14 +47,14 @@ the important parts of the values are described in the Parameters column.
 +--------+------------------------------------------------+-----------------------------------------+-----------------------------------------------------+----------------------------+
 |GET     | ``/qiita_db/prep_template/<prep_id>/``         |                                         | Retrieves the preparation template information      | PrepTemplateDBHandler      |
 +--------+------------------------------------------------+-----------------------------------------+-----------------------------------------------------+----------------------------+
-|GET     | ``/qiita_db/plugins/<plugin_name>/<version>`   |                                         | Activates the command                               | CommandActivateHandler     |
-|        | /commands/<command_name>/activate/`            |                                         |                                                     |                            |
+|GET     | ``/qiita_db/plugins/<plugin_name>/<version>``  |                                         | Activates the command                               | CommandActivateHandler     |
+|        | ``/commands/<command_name>/activate/``         |                                         |                                                     |                            |
 +--------+------------------------------------------------+-----------------------------------------+-----------------------------------------------------+----------------------------+
-|GET     | ``/qiita_db/plugins/<plugin_name>/<version>    |                                         | Retrieve the command information                    | CommandHandler             |
-|        |/commands/<command_name>/``                     |                                         |                                                     |                            |
+|GET     | ``/qiita_db/plugins/<plugin_name>/<version>``  |                                         | Retrieve the command information                    | CommandHandler             |
+|        | ``/commands/<command_name>/``                  |                                         |                                                     |                            |
 +--------+------------------------------------------------+-----------------------------------------+-----------------------------------------------------+----------------------------+
-|POST    | ``/qiita_db/plugins/<plugin_name>/<version>/commands/``                                  | ``name: <str>``, ``description: <str>``,| Create new command for a plugin                     | CommandListHandler         |
-|        |/commands/                                      |                                         |                                                     |                            |
+|POST    | ``/qiita_db/plugins/<plugin_name>/<version>    | ``name: <str>``, ``description: <str>``,| Create new command for a plugin                     | CommandListHandler         |
+|        | ``/commands/``                                 |                                         |                                                     |                            |
 |        |                                                | ``required_parameters: <dict>``,        |                                                     |                            |
 |        |                                                | ``optional_parameters: <dict>``,        |                                                     |                            |
 |        |                                                | ``outputs: <list>``,                    |                                                     |                            |
